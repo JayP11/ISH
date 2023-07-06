@@ -1,0 +1,157 @@
+.nav-up {
+  background: var(--color-brand);
+  z-index: 999;
+}
+
+.nav-down {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background: var(--color-brand);
+  padding: 10px;
+}
+
+.top_nav_text_wrapp {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 6%;
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-top: 5px;
+  padding-bottom: 5px; */
+  /* padding: 5px 20px; */
+  /* margin: 0 auto; */
+}
+
+.nav-up-location {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-up-icon {
+  color: var(--color-golden);
+  fill: var(--color-golden);
+  height: 15px;
+  width: 15px;
+}
+
+.nav-up-text {
+  font-size: 10px;
+  /* text-transform: uppercase; */
+  color: var(--color-golden);
+  /* padding-top: 10px; */
+}
+
+.main-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.bg-nav {
+  background-color: var(--color-brand);
+}
+
+.main-nav-link {
+  color: var(--color-golden);
+  font-size: 16px;
+  background: none;
+  border: none;
+  font-weight: 600;
+}
+
+.main-nav-link:hover {
+  color: var(--color-white);
+}
+
+.main-nav-logo {
+  min-width: -moz-fit-content;
+  min-width: -webkit-fill-available;
+  min-width: fit-content;
+}
+
+.nav-logo {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* .padding-nav {
+  padding-left: 40px;
+  padding-right: 0px !important;
+} */
+
+.side_icon {
+  display: none;
+  width: 40px;
+  height: 40px;
+  /* border: none; */
+  color: var(--color-brand);
+  cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  .main-nav-list {
+    display: none;
+  }
+
+  .side_icon {
+    display: block;
+  }
+
+  .top_nav_text_wrapp {
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+
+  .sidebar_main_wrapp {
+    width: 100%;
+    background: var(--color-brand);
+    padding: 4%;
+    margin-top: 1%;
+    position: fixed;
+    top: 112px;
+    z-index: 99;
+  }
+
+  .sidebar_base_wrapp {
+    padding: 4%;
+    border: 1px solid var(--color-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color: var(--color-white);
+  }
+
+  .sidebar_link {
+    padding: 10px;
+    min-width: 200px;
+    min-width: 200px;
+    border: 1px solid var(--color-golden);
+    background: transparent;
+    color: var(--color-golden);
+    font-size: 1rem;
+  }
+
+  .sidebar_link:hover {
+    border: 1px solid var(--color-brand);
+    color: var(--color-brand);
+    background: var(--color-golden);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 400px) {
+    .foot-mail-wrapp {
+      flex-direction: column;
+    }
+  }
+}

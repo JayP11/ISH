@@ -1,0 +1,28 @@
+.home-brand-logo-sec {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 96px;
+}
+
+.home-brand-logo-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-brand-logo-img {
+    width: 140px;
+    height: 110px;
+    opacity: 0.6;
+}
+
+.home-brand-logo-img:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+    .home-brand-logo-flex {
+        gap: 25px
+    }
+}

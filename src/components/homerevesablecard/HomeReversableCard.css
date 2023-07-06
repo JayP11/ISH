@@ -1,0 +1,231 @@
+.home-revr-card-main {
+    width: 100%;
+    background-color: #FBF2F0;
+}
+
+.home-services-container {
+    padding-top: 25px;
+    /* padding-bottom: 96px; */
+}
+
+.home-services-table {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px, -22%);
+
+}
+
+
+.home-service-card {
+    position: relative;
+    width: 300px;
+    height: 490px;
+    margin: 12px;
+}
+
+.home-service-card .home-service-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 4px;
+}
+
+.home-service-card .home-service-front {
+    transform: perspective(600px) rotateY(0deg);
+    /* box-shadow: 0 5px 10px #000; */
+}
+
+.home-service-card .home-service-front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.home-service-card .home-service-front {
+    /* position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 45px;
+    color: white;
+    background: rgba(0, 0, 0, .2);
+    text-align: center; */
+}
+
+.home-service-card .home-service-back {
+    transform: perspective(600px) rotateY(180deg);
+    /* background: rgb(3, 35, 54); */
+    background-image: linear-gradient(to right, #fb7f87, #f7aa80);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    /* box-shadow: 0 5px 10px #000; */
+}
+
+.home-service-card .home-service-back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.home-service-card .home-service-back p {
+    letter-spacing: 1px;
+}
+
+.home-service-card:hover .home-service-front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.home-service-card:hover .home-service-back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.box {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+@media(max-width:991px) {
+    .home-services-container {
+        margin-top: -50px;
+    }
+}
+
+.home-service-card-frint-txt-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: linear-gradient(180deg, transparent 30%, #232323);
+    opacity: .7;
+    color: var(--color-white);
+}
+
+.home-service-card-img {
+    position: relative;
+}
+
+.card-back-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.home-service-card-inner-txt-box {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.home-service-card-title {
+    color: var(--color-white);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.home-services-card-txt {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300 !important;
+}
+
+.home-card-back-heading {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.home-card-back-link {
+    text-decoration: underline;
+    color: #232323;
+}
+
+.revr-card-down-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.revr-card-down-flex-part1-txt {
+    color: var(--color-heading-txt-gray);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.revr-card-down-flex {
+    /* margin-top: 96px; */
+    padding-bottom: 96px;
+}
+
+.revr-card-down-flex-part1 {
+    width: 35%;
+}
+
+.revr-card-down-flex-part2 {
+    width: 40%;
+}
+
+.revr-card-down-part2-txt {
+    color: var(--color-txt-gray);
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+
+/* Media Query Start */
+
+@media screen and (max-width:1100px) {
+    .home-services-table {
+        transform: translate(0px, 0px);
+        padding-bottom: 96px;
+    }
+
+    .home-services-sec {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .revr-card-down-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .revr-card-down-flex-part1 {
+        width: 90%;
+    }
+
+    .revr-card-down-flex-part2 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .revr-card-down-flex-part1-txt {
+        font-size: 26px;
+        line-height: 2rem;
+    }
+}

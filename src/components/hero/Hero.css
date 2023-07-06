@@ -1,0 +1,130 @@
+.hero-img-inner-main {
+    position: absolute;
+    /* left: 10%; */
+    top: 32%;
+    width: 100%;
+
+    /* background: red */
+}
+
+.hero-img-slider {
+    position: relative !important;
+}
+
+.hero-img-inner-sub {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.hero-banner-txt-img {
+    width: 330px !important;
+    height: 175px !important;
+}
+
+.hero-banner-sub-txt {
+    text-transform: capitalize;
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.carousel .control-dots {
+    display: none !important;
+}
+
+
+.hero-logobox {
+    /* height: 70vh; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 96px;
+}
+
+.hero-logo {
+    width: 70%;
+    height: 100%;
+}
+
+
+
+
+@media screen and (max-width: 1050px) {
+    .hero-img-inner-main {
+        top: 20%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    /* .hero-img-inner-sub {
+        max-width: 500px;
+    }
+
+    .hero-img-inner-main {
+        top: 22%;
+    }
+
+    .hero-banner-txt-img {
+        width: 200px !important;
+        height: 125px !important;
+    } */
+
+    .hero-logo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:630px) {
+
+    /* .hero-img-inner-sub {
+        height: 25vh;
+    } */
+    .hero-logobox {
+        /* height: 50vh; */
+    }
+
+    /* .hero-logo {
+        width: 80%;
+    } */
+}
+
+@media screen and (max-width:420px) {
+    /* .hero-banner-txt-img {
+        width: 275px !important;
+        height: 90px !important;
+    } */
+
+    /* .hero-img-inner-sub {
+        height: 24vh;
+    } */
+
+    /* .hero-img-inner-main {
+        top: 32%;
+    } */
+
+    .nav-logo {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    /* .carousel .slide img {
+        height: 350px !important;
+    } */
+
+    .hero-logo {
+        /* height: 40vh; */
+        width: 100%;
+    }
+
+    .hero-logobox {
+        /* height: 40vh; */
+    }
+}

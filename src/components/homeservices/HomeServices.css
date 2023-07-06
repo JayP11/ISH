@@ -1,0 +1,121 @@
+.home-services-sec {
+  width: 100%;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  margin-bottom: 185px;
+}
+
+.home-services-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.home-services-heading-img {
+  width: 100px;
+  height: 100px;
+}
+
+.home-services-head-txt {
+  color: #939393;
+  font-size: 16px;
+}
+
+.home-services-head-big-txt {
+  color: var(--color-heading-txt-gray);
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.home-services-box-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* gap: 10px; */
+  /* align-items: center; */
+}
+
+.home-services-box {
+  width: 24%;
+}
+
+.home-services-box-inner {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.home-services-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.home-service-box-txt {
+  color: var(--color-txt-gray);
+  font-size: 16px;
+  text-align: inherit;
+  /* text-align: justify;
+  text-justify: distribute;
+   */
+  line-height: 1.5rem;
+  text-align: justify;
+  width: 240px;
+  word-break: break-all;
+}
+
+.home-services-box-heading {
+  color: var(--color-heading-txt-gray);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.home-services-head-txt2 {
+  color: var(--color-txt-gray);
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 825px) {
+  .home-services-box {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home-services-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .home-services-heading {
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .home-services-head-big-txt {
+    font-size: 24px;
+  }
+
+  .home-services-heading {
+    max-width: 335px;
+  }
+
+  .nav-logoo {
+    width: 125px !important;
+    height: 125px !important;
+  }
+}

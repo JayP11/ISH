@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.whats-app-main {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 40px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 15px;
+  z-index: 100;
+}
+
+.float-icon {
+  width: 30px;
+  height: 30px;
+  color: var(--color-txt-gray);
+}
+
+/* For Book Appointment Button */
+
+.subscription-btn {
+  position: fixed;
+  /* width: 55px;
+    height: 55px; */
+  bottom: 50%;
+  /* border-radius: 50px; */
+  text-align: center;
+  /* box-shadow: 2px 2px 3px #999; */
+  z-index: 100;
+  right: -35px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transform: rotate(90deg);
+  --gradient-color: linear-gradient(45deg, #fd7f87, #f7aa80, #fd7f87);
+  --brand-color: linear-gradient(to right, #fd7f87, #f7aa80, #fd7f87);
+  --text-color: #fff;
+  background: var(--brand-color);
+  color: var(--color-white);
+
+}
+
+
+@media screen and (max-width:920px) {
+  .subscription-btn {
+    position: fixed;
+    /* width: 55px;
+      height: 55px; */
+    bottom: 32px;
+    /* border-radius: 50px; */
+    text-align: center;
+    /* box-shadow: 2px 2px 3px #999; */
+    z-index: 100;
+    right: 68px;
+    padding: 15px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transform: rotate(0deg);
+    --gradient-color: linear-gradient(45deg, #fd7f87, #f7aa80, #fd7f87);
+    --brand-color: linear-gradient(to right, #fd7f87, #f7aa80, #fd7f87);
+    --text-color: #fff;
+    background: var(--brand-color);
+    color: var(--color-white);
+
+  }
+}
