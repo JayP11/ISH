@@ -20,8 +20,14 @@ import round_small_img_2 from "../asset/round_small_img_2.webp";
 import round_small_img_3 from "../asset/round_small_img_3.webp";
 import spoons_bg_img from "../asset/spoons_bg_img.webp";
 import testi_img1 from "../asset/testi_img1.webp";
+import Nisha_Karia from "../asset/Nisha_Karia.png";
 import testi_img2 from "../asset/testi_img2.webp";
+import Sheetal from "../asset/Sheetal_r.png";
 import testi_img3 from "../asset/testi_img_3.webp";
+import Ashita_Karia from "../asset/Ashita_Karia.jpeg";
+import Yashvi_Buch from "../asset/Yashvi_Buch.png";
+import Shivani_Patel from "../asset/800600.png";
+
 import hero_banner_txt_img1 from "../asset/hero_banner_txt_img1.webp";
 import hero_banner_txt_img2 from "../asset/hero_banner_txt_img2.webp";
 import hero_banner_txt_img3 from "../asset/hero_banner_txt_img3.webp";
@@ -73,8 +79,13 @@ export default {
   round_small_img_3,
   spoons_bg_img,
   testi_img1,
+  Nisha_Karia,
   testi_img2,
+  Sheetal,
   testi_img3,
+  Ashita_Karia,
+  Yashvi_Buch,
+  Shivani_Patel,
   hero_banner_txt_img1,
   hero_banner_txt_img2,
   hero_banner_txt_img3,

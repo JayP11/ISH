@@ -1,15 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.c20266da.css",
-    "main.js": "/static/js/main.47de408c.js",
+    "main.js": "/static/js/main.436d1ca6.js",
     "static/js/787.1e693262.chunk.js": "/static/js/787.1e693262.chunk.js",
+    "static/media/800600.png": "/static/media/800600.3bf621d7d105bc69ce70.png",
     "static/media/JSH Essence-02.png": "/static/media/JSH Essence-02.c592af37fb989f2db733.png",
     "static/media/JSH Essence-03.png": "/static/media/JSH Essence-03.10c8ad04548028bb10fc.png",
+    "static/media/Nisha_Karia.png": "/static/media/Nisha_Karia.158b15981eaefcf584ee.png",
+    "static/media/Sheetal_r.png": "/static/media/Sheetal_r.4d80ba4a5566ffe63926.png",
     "static/media/JSH Essence-01.png": "/static/media/JSH Essence-01.23a2e52592b1e4cf8dc2.png",
+    "static/media/Yashvi_Buch.png": "/static/media/Yashvi_Buch.80eaa7f17e77c22ea135.png",
     "static/media/card_slider_img_1.webp": "/static/media/card_slider_img_1.fd1db2c787c6a087dc5c.webp",
     "static/media/hero_banner_22.png": "/static/media/hero_banner_22.1553a0dfb84405785c0f.png",
     "static/media/footer_up_card_bg_img3.webp": "/static/media/footer_up_card_bg_img3.215cf1456edf7e9a09e8.webp",
     "static/media/card_slider_img_3.webp": "/static/media/card_slider_img_3.9f1dc48bf08e11817a28.webp",
+    "static/media/Ashita_Karia.jpeg": "/static/media/Ashita_Karia.f923ab7603b40bf5f73d.jpeg",
     "static/media/card_slider_img_2.webp": "/static/media/card_slider_img_2.4216d811767f39db5383.webp",
     "static/media/leaf_bg_img.webp": "/static/media/leaf_bg_img.0989de425d2ad435b4ce.webp",
     "static/media/brand-logo.jpeg": "/static/media/brand-logo.4a69d4fdc1912a199c80.jpeg",
@@ -49,11 +54,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.c20266da.css.map": "/static/css/main.c20266da.css.map",
-    "main.47de408c.js.map": "/static/js/main.47de408c.js.map",
+    "main.436d1ca6.js.map": "/static/js/main.436d1ca6.js.map",
     "787.1e693262.chunk.js.map": "/static/js/787.1e693262.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c20266da.css",
-    "static/js/main.47de408c.js"
+    "static/js/main.436d1ca6.js"
   ]
 }
