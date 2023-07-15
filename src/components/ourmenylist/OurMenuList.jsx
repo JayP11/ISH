@@ -8,7 +8,7 @@ const OurMenuList = () => {
         <div className="our-service-menu-heading-part">
           <p className="our-service-menu-heading-main">SERVICE MENU</p>
           <p className="our-service-menu-heading-txt">
-            Relaxing & Result-OrRiented Aesthetic Treatment
+            Relaxing & Result-oriented esthetic Treatment
           </p>
         </div>
         <div className="our-menu-list-felx">
@@ -19,46 +19,57 @@ const OurMenuList = () => {
             <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
                 <p className="our-service-item-name">
-                  ISHpecial Facial 100 mins{" "}
+                  ISHpecial Shanti Bliss Facial 100 mins
                 </p>
                 <p className="our-service-item-price">$150</p>
               </div>
               <p className="our-service-item-desc">
-                A relaxing facial designed to provide a soothing and tranquil
-                experience while rejuvenating and nourishing the skin.The focus
-                of a relaxing facial is to promote relaxation and stress relief,
-                while also providing skincare benefits. LED light therapy,
-                relaxing, lymphatic drainage face, neck, décolleté and trapezius
-                massage with kansa wand and marma (pressure points) and algae
-                peel off mask
+                Immerse yourself in the blissful serenity of this facial,
+                designed to soothe both your skin and your soul. Combining
+                gentle Ayurvedic techniques with calming ingredients, it
+                provides deep relaxation, nourishment, and a luminous glow. The
+                Shanti Bliss facial is designed to provide a soothing and
+                tranquil experience while rejuvenating and nourishing the skin.
+                LED light therapy, relaxing, lymphatic drainage face, neck,
+                décolleté and trapezius massage with kansa wand and marma
+                (pressure points) and algae peel off mask
               </p>
             </div>
 
             <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
                 <p className="our-service-item-name">
-                  Customized Facial 110 mins{" "}
+                  Sattva Radiance Facial 110 mins
                 </p>
                 <p className="our-service-item-price">$170</p>
               </div>
               <p className="our-service-item-desc">
-                A personalized skincare treatment tailored to address your
-                specific skin concerns and needs. Includes LED light therapy,
-                relaxing face, neck, décolleté and trapezius massage with
-                lymphatic drainage and marma (pressure points) and algae peel
-                off mask.
+                Experience the pure essence of radiance with this facial that
+                promotes inner tranquility and outer glow. Using Sattvic
+                principles, it purifies your skin, calms your mind, and imparts
+                a luminous and peaceful aura. A customized skincare treatment
+                tailored to address your specific skin concerns and needs.
+                Includes LED light therapy, relaxing face, neck, décolleté and
+                trapezius massage with lymphatic drainage and marma (pressure
+                points) and algae peel off mask.
               </p>
             </div>
 
             <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
-                <p className="our-service-item-name">Mini Facial 60 mins </p>
+                <p className="our-service-item-name">
+                  Tridosha Harmony Facial 60 mins
+                </p>
                 <p className="our-service-item-price">$85</p>
               </div>
               <p className="our-service-item-desc">
-                Cleansing and exfoliation with the choice of booster ampoule(
-                stabilizing, hydrating or firming). Hydrating and nourishing
-                face massage with a peel off mask.
+                Restore balance to your skin and bring harmony to your mind, and
+                spirit with this facial. Tailored to your unique constitution,
+                it addresses imbalances in Vata, Pitta, and Kapha doshas,
+                leaving your skin nourished, balanced, and vibrant. Cleansing
+                and exfoliation with the choice of booster ampoule( stabilizing,
+                hydrating or firming). Hydrating and nourishing face massage
+                with a peel off mask.
               </p>
             </div>
           </div>
@@ -152,7 +163,7 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   Dermaplaning Facial 90 mins{" "}
                 </p>
-                <p className="our-service-item-price">$100</p>
+                <p className="our-service-item-price">$110</p>
               </div>
               <p className="our-service-item-desc">
                 Deep cleanse with steam to prepare the skin. Exfoliate and
