@@ -16,7 +16,6 @@
   flex-direction: column;
   gap: 20px;
   /* align-items: center; */
-
 }
 
 .footer-inner-part2-flex {
@@ -25,7 +24,6 @@
   flex-direction: column;
   gap: 20px;
   /* align-items: center; */
-
 }
 
 .footer-inner-part3-flex {
@@ -34,7 +32,6 @@
   flex-direction: column;
   gap: 20px;
   /* align-items: center; */
-
 }
 
 .footer-inner-part4-flex {
@@ -43,7 +40,6 @@
   flex-direction: column;
   gap: 20px;
   /* align-items: center; */
-
 }
 
 .footer-part-header {
@@ -65,8 +61,8 @@
 }
 
 .link-footer-icon {
-  width: 15px;
-  height: 15px;
+  width: 22px;
+  height: 22px;
   color: var(--color-white);
 }
 
@@ -91,11 +87,11 @@
 .insta-footer-icon {
   width: 20px;
   height: 20px;
-  color: #B16A98;
+  color: #b16a98;
 }
 
 .insta-txt-footer {
-  color: #B16A98;
+  color: #b16a98;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -148,17 +144,13 @@
   border-radius: 4px;
 }
 
-
-
 .footer-insta-img-main {
   position: relative;
-
 }
 
 .footer-insta-img-part :hover {
   /* display: none; */
 }
-
 
 /* media screen */
 
@@ -176,9 +168,7 @@
   }
 
   .footer-inner-part4-flex {
-
     width: 275px;
-
   }
 }
 
@@ -186,24 +176,18 @@
   .footer-flex {
     /* flex-direction: column; */
     gap: 25px;
-
-
   }
 
   .footer-inner-part1-flex {
-
     width: 275px;
   }
 
   .footer-inner-part2-flex {
-
     width: 275px;
   }
 
   .footer-inner-part3-flex {
-
     width: 275px;
-
   }
 }
 
@@ -216,7 +200,6 @@
   }
 
   .footer-flex {
-
     padding-top: 10%;
     padding-bottom: 10%;
   }

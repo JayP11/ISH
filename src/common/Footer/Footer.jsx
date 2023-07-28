@@ -12,6 +12,7 @@ import axios from "axios";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { mobileValidate } from "../../Utils/helpers";
 import { Link } from "react-router-dom";
+import { BsChatText } from "react-icons/bs";
 const Footer = () => {
   const [email, setemail] = useState("");
 
@@ -25,7 +26,7 @@ const Footer = () => {
   //     return;
   //   } else {
   //     const formData = new FormData();
-  //     //  
+  //     //
   //     formData.append("email", email);
   //     console.log("formData contact us ", formData);
 
@@ -76,9 +77,16 @@ const Footer = () => {
         <div className="footer-inner-part3-flex">
           <p className="footer-part-header">Get in touch</p>
           <div className="footer-link-flex">
-            <p className="footer-link">Atarah Beauty Bar, <br /> 1251 Magnolia st, Bowling Green, KY 42101</p>
+            <p className="footer-link">
+              Atarah Beauty Bar, <br /> 1251 Suite 2, 1251 Magnolia street,
+              Bowling Green, KY 42104
+            </p>
             <div className="footer-icon-flex">
-              <FiPhoneCall className="link-footer-icon" />
+              {/* <FiPhoneCall className="link-footer-icon" /> */}
+              <BsChatText
+                style={{ color: "white" }}
+                className="con-info-icon"
+              />
               <a href="tel:+1 6154998889" className="footer-link">
                 +1 6154998889
               </a>
@@ -95,10 +103,14 @@ const Footer = () => {
           <p className="footer-part-header">Follow us on Instagram</p>
           <div className="footer-img-flex">
             <div className="footer-insta-img-main">
-              <img src={images.footer_link_img1} className="footer-link-part-img" />
+              <img
+                src={images.footer_link_img1}
+                className="footer-link-part-img"
+              />
               <div className="footer-insta-img-part">
-
-                <a href="https://www.instagram.com/" target="_blank"><AiOutlineInstagram className="footer-social-icon" /></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <AiOutlineInstagram className="footer-social-icon" />
+                </a>
               </div>
             </div>
             {/* <div className="footer-insta-img-main">
@@ -118,7 +130,9 @@ const Footer = () => {
           </div>
           <div className="footer-insta-flex">
             <AiOutlineInstagram className="insta-footer-icon" />
-            <a href="https://www.instagram.com/" className="insta-txt-footer">Follow Instagram</a>
+            <a href="https://www.instagram.com/" className="insta-txt-footer">
+              Follow Instagram
+            </a>
           </div>
         </div>
       </div>
@@ -130,10 +144,16 @@ const Footer = () => {
         </div>
         <p className="footer-copyright-txt">© 2023 all rights reserved.</p>
         <div className="footer-bottom-social-icon-flex">
-          <a href="https://www.facebook.com/" target="_blank"><FaFacebookF className="footer-social-icon" /></a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <FaFacebookF className="footer-social-icon" />
+          </a>
           <TbWorld className="footer-social-icon" />
-          <a href="https://twitter.com/" target="_blank"><FaTwitter className="footer-social-icon" /></a>
-          <a href="https://www.instagram.com/" target="_blank"><AiOutlineInstagram className="footer-social-icon" /></a>
+          <a href="https://twitter.com/" target="_blank">
+            <FaTwitter className="footer-social-icon" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <AiOutlineInstagram className="footer-social-icon" />
+          </a>
         </div>
       </div>
     </div>

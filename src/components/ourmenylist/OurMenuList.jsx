@@ -230,7 +230,7 @@ const OurMenuList = () => {
           </div>
 
           {/* here */}
-          <div className="our-service-menu-part">
+          {/* <div className="our-service-menu-part">
             <div className="our-service-menu-type-box">
               <p className="facial-type">Add-On </p>
             </div>
@@ -250,7 +250,7 @@ const OurMenuList = () => {
               <p className="our-service-item-name">Gua Sha </p>
               <p className="our-service-item-price">$25</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
