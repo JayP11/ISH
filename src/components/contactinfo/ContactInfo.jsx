@@ -50,8 +50,11 @@ const ContactInfo = () => {
                   <p className="our-service-item-name">Address :</p>
                 </div>
                 <p className="our-service-item-desc">
-                  Atarah Beauty Bar, <br /> Suite 2, 1251 Magnolia street,
-                  Bowling Green, KY 42104
+                  {/* Atarah Beauty Bar, <br /> Suite 2, 1251 Magnolia street,
+                  Bowling Green, KY 42104 */}
+                  Tanglez Hair Studio,
+                  <br />
+                  2530 Scottsville Rd, 108, Bowling Green KY 42104
                 </p>
               </div>
 
