@@ -80,8 +80,7 @@ const Footer = () => {
             <p className="footer-link">
               {/* Atarah Beauty Bar, <br /> 1251 Suite 2, 1251 Magnolia street,
               Bowling Green, KY 42104 */}
-              Tanglez Hair Studio,
-              <br />
+              Tanglez Hair Studio,<br/>
               2530 Scottsville Rd, 108, Bowling Green KY 42104
             </p>
             <div className="footer-icon-flex">

@@ -14,14 +14,16 @@ const OurMenuList = () => {
         <div className="our-menu-list-felx">
           <div className="our-service-menu-part">
             <div className="our-service-menu-type-box">
-              <p className="facial-type">Relaxing Facial</p>
+              {/* <p className="facial-type">Relaxing Facial</p> */}
+              <p className="facial-type">Signature Facials</p>
             </div>
             <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
                 <p className="our-service-item-name">
+                  {/* ISHpecial Shanti Bliss Facial 100 mins */}
                   ISHpecial Shanti Bliss Facial 100 mins
                 </p>
-                <p className="our-service-item-price">$150</p>
+                <p className="our-service-item-price">$147</p>
               </div>
               <p className="our-service-item-desc">
                 Immerse yourself in the blissful serenity of this facial,
@@ -41,7 +43,7 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   Sattva Radiance Facial 110 mins
                 </p>
-                <p className="our-service-item-price">$170</p>
+                <p className="our-service-item-price">$167</p>
               </div>
               <p className="our-service-item-desc">
                 Experience the pure essence of radiance with this facial that
@@ -60,7 +62,7 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   Tridosha Harmony Facial 60 mins
                 </p>
-                <p className="our-service-item-price">$85</p>
+                <p className="our-service-item-price">$87</p>
               </div>
               <p className="our-service-item-desc">
                 Restore balance to your skin and bring harmony to your mind, and
@@ -80,9 +82,9 @@ const OurMenuList = () => {
             <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
                 <p className="our-service-item-name">
-                  Silver HydroFacial 60 mins - 80 mins{" "}
+                  Silver HydroFacial 60 mins
                 </p>
-                <p className="our-service-item-price">$120</p>
+                <p className="our-service-item-price">$117</p>
               </div>
               <p className="our-service-item-desc">
                 Deep cleansing, exfoliation, and extraction with face, neck and
@@ -94,7 +96,7 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   Gold HydroFacial 80 mins - 100 mins{" "}
                 </p>
-                <p className="our-service-item-price">$150</p>
+                <p className="our-service-item-price">$147</p>
               </div>
               <p className="our-service-item-desc">
                 Deep cleansing, exfoliation, extraction. Serum infusion with
@@ -107,7 +109,7 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   Platinum HydroFacial 100 mins - 120 mins{" "}
                 </p>
-                <p className="our-service-item-price">$180</p>
+                <p className="our-service-item-price">$177</p>
               </div>
               <p className="our-service-item-desc">
                 Deep cleansing, exfoliation, and extraction. Serum infusion with
@@ -116,7 +118,39 @@ const OurMenuList = () => {
                 hydration. Neck and décolleté massage.
               </p>
             </div>
-            <div className="our-service-menu-item-box">
+            {/*  */}
+            <div className="our-service-menu-part">
+              <div className="our-service-menu-type-box">
+                <p className="facial-type">Back Facials</p>
+              </div>
+              <div className="our-service-menu-item-box">
+                <div className="our-service-menu-item-heading">
+                  <p className="our-service-item-name">Back Facial 45mins </p>
+                  <p className="our-service-item-price">$67</p>
+                </div>
+                <p className="our-service-item-desc">
+                  Gentle cleansing and exfoliation to remove dead skin cells to
+                  smooth the skin's texture. Application of a hydrating mask to
+                  replenish moisture. Moisturizer application to nourish and
+                  soften the back.
+                </p>
+              </div>
+              <div className="our-service-menu-item-box">
+                <div className="our-service-menu-item-heading">
+                  <p className="our-service-item-name">
+                    HydroBack Facial 55 mins
+                  </p>
+                  <p className="our-service-item-price">$83</p>
+                </div>
+                <p className="our-service-item-desc">
+                  Hydrodermabrasion of the back to remove impurities.
+                  Application of a purifying mask to clarify the skin.
+                  Nourishing massage to hydrate the back.
+                </p>
+              </div>
+            </div>
+            {/*  */}
+            {/* <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
                 <p className="our-service-item-name">Back Facial 45mins </p>
                 <p className="our-service-item-price">$65</p>
@@ -140,8 +174,41 @@ const OurMenuList = () => {
                 of a purifying mask to clarify the skin. Nourishing massage to
                 hydrate the back.
               </p>
-            </div>
+            </div> */}
           </div>
+
+          {/*  */}
+          {/* <div className="our-service-menu-part">
+            <div className="our-service-menu-type-box">
+              <p className="facial-type">Back Facials</p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">Back Facial 45mins </p>
+                <p className="our-service-item-price">$67</p>
+              </div>
+              <p className="our-service-item-desc">
+                Gentle cleansing and exfoliation to remove dead skin cells to
+                smooth the skin's texture. Application of a hydrating mask to
+                replenish moisture. Moisturizer application to nourish and
+                soften the back.
+              </p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">
+                  HydroBack Facial 55 mins
+                </p>
+                <p className="our-service-item-price">$85</p>
+              </div>
+              <p className="our-service-item-desc">
+                Hydrodermabrasion of the back to remove impurities. Application
+                of a purifying mask to clarify the skin. Nourishing massage to
+                hydrate the back.
+              </p>
+            </div>
+          </div> */}
+          {/*  */}
           <div className="our-service-menu-part">
             <div className="our-service-menu-type-box">
               <p className="facial-type">Dermaplaning</p>
@@ -149,7 +216,7 @@ const OurMenuList = () => {
             <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
                 <p className="our-service-item-name">Dermaplaning 60 mins </p>
-                <p className="our-service-item-price">$75</p>
+                <p className="our-service-item-price">$77</p>
               </div>
               <p className="our-service-item-desc">
                 Gentle cleanse. Dermaplane to remove vellus hair (peach fuzz)
@@ -163,7 +230,7 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   Dermaplaning Facial 90 mins{" "}
                 </p>
-                <p className="our-service-item-price">$110</p>
+                <p className="our-service-item-price">$113</p>
               </div>
               <p className="our-service-item-desc">
                 Deep cleanse with steam to prepare the skin. Exfoliate and
@@ -204,7 +271,7 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   S.A.S DermaPeel 110 mins
                 </p>
-                <p className="our-service-item-price">$160</p>
+                <p className="our-service-item-price">$157</p>
               </div>
               <p className="our-service-item-desc">
                 To remove imperfections and purify the skin,refine blocked and
@@ -218,13 +285,133 @@ const OurMenuList = () => {
                 <p className="our-service-item-name">
                   P.S.F DermaPeel 90 mins{" "}
                 </p>
-                <p className="our-service-item-price">$150</p>
+                <p className="our-service-item-price">$147</p>
               </div>
               <p className="our-service-item-desc">
                 For mature skin with visible signs of aging, including dark
                 spots, deep wrinkles, lack of firmness, and dull or devitalized
                 skin. Recommended to globally treat all signs of aging and
                 intensely rejuvenate the complexion.
+              </p>
+            </div>
+          </div>
+          <div className="our-service-menu-part">
+            <div className="our-service-menu-type-box">
+              <p className="facial-type">Hair Treatments</p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">
+                  Herbal Hair Mask 90 mins
+                </p>
+                <p className="our-service-item-price">$87</p>
+              </div>
+              <p className="our-service-item-desc">
+                Herbal powders mixed with oil to create hair masks. These masks
+                can help with dandruff, hair loss, and promotes hair growth.
+                Includes shampoo, blow dry and styling.
+              </p>
+            </div>
+
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">Shiro Abhyanga 60 mins</p>
+                <p className="our-service-item-price">$77</p>
+              </div>
+              <p className="our-service-item-desc">
+                This is a head massage technique done with warm oil that
+                stimulates the pressure points on the scalp, promoting
+                relaxation and improving blood circulation to the hair
+                follicles. Includes shampoo, blow dry and styling.
+              </p>
+            </div>
+          </div>
+
+          <div className="our-service-menu-part">
+            <div className="our-service-menu-type-box">
+              <p className="facial-type">Express services</p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">Express Facial 40 mins</p>
+                <p className="our-service-item-price">$57</p>
+              </div>
+              <p className="our-service-item-desc">
+                Cleansing, manual exfoliation and a hydrating mask
+              </p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">
+                  Express Vitamin C Facial 30 mins
+                </p>
+                <p className="our-service-item-price">$47</p>
+              </div>
+              <p className="our-service-item-desc">
+                Double cleansing, Vitamin C infusion with hydro jet 8 hydrating
+                face mask.
+              </p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">Luxury Blowout 45 mins</p>
+                <p className="our-service-item-price">$43</p>
+              </div>
+              <p className="our-service-item-desc">
+                Shampoo and styling with all natural shampoo and conditioner.
+                Includes scalp, neck and shoulder massage.
+              </p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">
+                  Algae Peel off mask 25 mins
+                </p>
+                <p className="our-service-item-price">$33</p>
+              </div>
+              <p className="our-service-item-desc">
+                Goji berry algae peel off mask
+              </p>
+            </div>
+          </div>
+
+          <div className="our-service-menu-part">
+            <div className="our-service-menu-type-box">
+              <p className="facial-type">Package Deals</p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">
+                  Pre-Bridal Package valid for 3 months
+                </p>
+                <p className="our-service-item-price">$450</p>
+              </div>
+              <p className="our-service-item-desc">
+                2 Facial treatments - 1 Dermaplaning - 1 Mini Facial - 1 hair
+                treatment (with haircut)
+              </p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">
+                  Event-Ready one day package 120mins
+                </p>
+                <p className="our-service-item-price">$200</p>
+              </div>
+              <p className="our-service-item-desc">
+                Express Facial - Shampoo & blowdry - Special occasion hairstyle
+                - Soft glam makeup with lashes.
+              </p>
+            </div>
+            <div className="our-service-menu-item-box">
+              <div className="our-service-menu-item-heading">
+                <p className="our-service-item-name">
+                  On the go package 90mins
+                </p>
+                <p className="our-service-item-price">$150</p>
+              </div>
+              <p className="our-service-item-desc">
+                Algae peel off mask - Shampoo & style - Natural makeup
               </p>
             </div>
           </div>
@@ -253,6 +440,9 @@ const OurMenuList = () => {
           </div> */}
         </div>
       </div>
+      <p className="home-services-head-big-txt" style={{paddingTop:"4rem"}}>
+        Ask us for more customized treatment and bridal packages.
+      </p>
     </div>
   );
 };
