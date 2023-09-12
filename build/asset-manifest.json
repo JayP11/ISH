@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb890d0d.css",
-    "main.js": "/static/js/main.443ee387.js",
+    "main.css": "/static/css/main.57db2450.css",
+    "main.js": "/static/js/main.fcfce39e.js",
     "static/js/787.1e693262.chunk.js": "/static/js/787.1e693262.chunk.js",
     "static/media/800600.png": "/static/media/800600.3bf621d7d105bc69ce70.png",
-    "static/media/JSH Essence-02.png": "/static/media/JSH Essence-02.c592af37fb989f2db733.png",
+    "static/media/JSH Essence-02_edited.jpg": "/static/media/JSH Essence-02_edited.40b65b5243b902ae717c.jpg",
     "static/media/JSH Essence-03.png": "/static/media/JSH Essence-03.10c8ad04548028bb10fc.png",
     "static/media/Nisha_Karia.png": "/static/media/Nisha_Karia.158b15981eaefcf584ee.png",
     "static/media/Sheetal_r.png": "/static/media/Sheetal_r.4d80ba4a5566ffe63926.png",
@@ -53,12 +53,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.bb890d0d.css.map": "/static/css/main.bb890d0d.css.map",
-    "main.443ee387.js.map": "/static/js/main.443ee387.js.map",
+    "main.57db2450.css.map": "/static/css/main.57db2450.css.map",
+    "main.fcfce39e.js.map": "/static/js/main.fcfce39e.js.map",
     "787.1e693262.chunk.js.map": "/static/js/787.1e693262.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb890d0d.css",
-    "static/js/main.443ee387.js"
+    "static/css/main.57db2450.css",
+    "static/js/main.fcfce39e.js"
   ]
 }

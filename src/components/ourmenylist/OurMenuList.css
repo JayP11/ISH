@@ -71,7 +71,8 @@
     font-size: 16px;
     color: var(--color-txt-gray);
     line-height: 1.5rem;
-    text-align: justify;
+    /* text-align: justify; */
+    text-align: left;
 }
 
 .our-service-menu-type-box {
