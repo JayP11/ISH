@@ -242,7 +242,7 @@ input[type="checkbox"] {
 }
 
 ::selection {
-  text-shadow: none;
+  /* text-shadow: none; */
 }
 
 button:focus,
@@ -358,6 +358,28 @@ p {
   font-weight: bold;
 }
 
+
+/* loader */
+.loader {
+  border: 16px solid var(--color-bg);
+  /* Light grey */
+  border-top: 16px solid #f68586;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* buttons */
 
@@ -498,18 +520,16 @@ p {
 }
 
 /* loader */
-.loader {
+/* .loader {
   border: 16px solid var(--color-bg);
-  /* Light grey */
   border-top: 16px solid var(--color-orange);
-  /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
-}
+} */
 
-@keyframes spin {
+/* @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -517,7 +537,7 @@ p {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 @media (max-width: 720px) {
   .h1 {

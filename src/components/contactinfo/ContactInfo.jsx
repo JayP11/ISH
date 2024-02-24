@@ -3,7 +3,8 @@ import "./ContactInfo.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsChatText, BsPerson } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
-const ContactInfo = () => {
+const ContactInfo = ({ getContactData }) => {
+  console.log("getContactData", getContactData);
   return (
     <>
       <div className="contact-sec">
@@ -18,17 +19,19 @@ const ContactInfo = () => {
                   <BsPerson className="con-info-icon" />
                   <p className="our-service-item-name">Contact Person :</p>
                 </div>
-                <p className="our-service-item-desc">Ishita Ghelani</p>
+                <p className="our-service-item-desc">{getContactData ? getContactData.name : ""}</p>
               </div>
               <div>
                 <div className="con-info-flex">
                   <HiOutlineMail className="con-info-icon" />
                   <p className="our-service-item-name">Email Id :</p>
                 </div>
+             
                 <a
-                  href="ishessence@gmail.com"
-                  className="our-service-item-desc">
-                  ishessence@gmail.com
+                  className="our-service-item-desc"
+                  href={"mailto:" + `${getContactData ? getContactData.email : ""}`}
+                >
+                  {getContactData ? getContactData.email : ""}
                 </a>
               </div>
 
@@ -39,9 +42,16 @@ const ContactInfo = () => {
                   <p className="our-service-item-name">Text only:</p>
                 </div>
 
-                <a href="tel:+1 6154998889" className="our-service-item-desc">
-                  +1 6154998889
+                <a href={"tel:" + `${getContactData ? getContactData.contactno : ""}`} className="our-service-item-desc">
+                {getContactData ? getContactData.contactno : ""}
                 </a>
+
+                {/* <a
+                  className="landing-profile-number"
+                  href={"tel:" + `${getdata.country_code}${getdata.mobile_no}`}
+                >
+                  +{getdata.country_code} {getdata.mobile_no}
+                </a> */}
               </div>
 
               <div>
@@ -49,12 +59,10 @@ const ContactInfo = () => {
                   <GrLocation className="con-info-icon" />
                   <p className="our-service-item-name">Address :</p>
                 </div>
-                <p className="our-service-item-desc">
-                  {/* Atarah Beauty Bar, <br /> Suite 2, 1251 Magnolia street,
-                  Bowling Green, KY 42104 */}
-                  Tanglez Hair Studio,
-                  <br />
-                  2530 Scottsville Rd, 108, Bowling Green KY 42104
+                <p className="our-service-item-desc" style={{maxWidth:"300px"}}>
+               
+                  {getContactData ? getContactData.address_one : ""}
+
                 </p>
               </div>
 

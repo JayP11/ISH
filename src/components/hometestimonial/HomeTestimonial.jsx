@@ -12,7 +12,7 @@ let review = {
   shivani:
     "Ish is truly amazing and so professional! From the beginning to end she cares about you and takes care of you. She and her team were beyond prepared for you making your day stress free. Ish gets to know what you want, creates mood inspirations and then will move forward ensuring you get the results you want. I got so many compliments on my makeup the day of my engagement party. She is truly the best and I would definitely recommend her for any facial or makeup needs!! ",
 };
-const HomeTestimonial = () => {
+const HomeTestimonial = ({ getHomeData }) => {
   var settings = {
     dots: false,
     arrows: false,
@@ -29,9 +29,16 @@ const HomeTestimonial = () => {
     <div className="home-testi-sec">
       <div className="home-testi-flex container">
         <div className="home-test-part1">
-          <p className="home-testi-part1-heading">LOVED BY OUR CUSTOMERS</p>
+          <p className="home-testi-part1-heading">
+            {getHomeData
+              ? getHomeData.testimonial_head
+              : "LOVED BY OUR CUSTOMERS"}
+          </p>
           <p className="home-test-part1-txt">
-            What our clients are <br /> saying about our luxury <br /> services
+            {getHomeData
+              ? /* ? getHomeData.testimonial_title */
+                "What our clients are saying about our luxury services"
+              : "What our clients are saying about our luxury services"}
           </p>
         </div>
         <div className="home-test-part2">
@@ -40,6 +47,7 @@ const HomeTestimonial = () => {
               <div className="home-testi-inner-flex">
                 <div className="home-testi-imgbox">
                   <img
+                    alt=""
                     src={images.Nisha_Karia}
                     className="home-testi-img"
                     style={{ width: "180px", height: "180px" }}
@@ -52,8 +60,8 @@ const HomeTestimonial = () => {
                     attentive, and created a relaxing atmosphere. Highly
                     recommended!
                   </p>
-                  <p class="home-testi-auth">Nisha karia</p>
-                  {/* <p class="home-testi-auth-desg">Sales manager</p> */}
+                  <p className="home-testi-auth">Nisha karia</p>
+                  {/* <p className="home-testi-auth-desg">Sales manager</p> */}
                 </div>
               </div>
             </div>
@@ -63,6 +71,7 @@ const HomeTestimonial = () => {
                 <div className="home-testi-imgbox">
                   <img
                     src={images.Sheetal}
+                    alt=""
                     className="home-testi-img"
                     style={{
                       width: "180px",
@@ -76,8 +85,8 @@ const HomeTestimonial = () => {
                     facial that was right for my skin, it did wonders! Thank
                     you, Ishita, am your regular now :)
                   </p>
-                  <p class="home-testi-auth">Sheetal Derashri</p>
-                  {/* <p class="home-testi-auth-desg">Microsoft Design</p> */}
+                  <p className="home-testi-auth">Sheetal Derashri</p>
+                  {/* <p className="home-testi-auth-desg">Microsoft Design</p> */}
                 </div>
               </div>
             </div>
@@ -85,15 +94,15 @@ const HomeTestimonial = () => {
             <div>
               <div className="home-testi-inner-flex">
                 <div className="home-testi-imgbox">
-                  <img src={images.Ashita_Karia} className="home-testi-img" />
+                  <img alt="" src={images.Ashita_Karia} className="home-testi-img" />
                 </div>
                 <div>
                   <p className="home-testi-txt">
                     Ishi is amazing..she helped me with my skin care and made my
                     skin flawless and glowing.
                   </p>
-                  <p class="home-testi-auth">Ashita dhabalia</p>
-                  {/* <p class="home-testi-auth-desg">Creative director</p> */}
+                  <p className="home-testi-auth">Ashita dhabalia</p>
+                  {/* <p className="home-testi-auth-desg">Creative director</p> */}
                 </div>
               </div>
             </div>
@@ -101,7 +110,7 @@ const HomeTestimonial = () => {
             <div>
               <div className="home-testi-inner-flex">
                 <div className="home-testi-imgbox">
-                  <img
+                  <img alt=""
                     src={images.Yashvi_Buch}
                     className="home-testi-img"
                     style={{
@@ -139,8 +148,8 @@ const HomeTestimonial = () => {
                       </>
                     )}
                   </p>
-                  <p class="home-testi-auth">Yashvi Buch</p>
-                  {/* <p class="home-testi-auth-desg">Creative director</p> */}
+                  <p className="home-testi-auth">Yashvi Buch</p>
+                  {/* <p className="home-testi-auth-desg">Creative director</p> */}
                 </div>
               </div>
             </div>
@@ -148,7 +157,7 @@ const HomeTestimonial = () => {
             <div>
               <div className="home-testi-inner-flex">
                 <div className="home-testi-imgbox">
-                  <img
+                  <img alt=""
                     src={images.Shivani_Patel}
                     className="home-testi-img"
                     style={{
@@ -185,8 +194,8 @@ const HomeTestimonial = () => {
                       </>
                     )}
                   </p>
-                  <p class="home-testi-auth">Shivani Patel</p>
-                  {/* <p class="home-testi-auth-desg">Creative director</p> */}
+                  <p className="home-testi-auth">Shivani Patel</p>
+                  {/* <p className="home-testi-auth-desg">Creative director</p> */}
                 </div>
               </div>
             </div>

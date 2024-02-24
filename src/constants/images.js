@@ -55,6 +55,7 @@ import hero_banner_11 from "../asset/hero_banner_11.jpg";
 import hero_banner_22 from "../asset/hero_banner_22.png";
 import icons8_flower_50 from "../asset/icons8_flower_50.png";
 import icons8_flower_48 from "../asset/icons8_flower_48.png";
+
 // import card_reverse_img1 from "../asset/card_reverse_img1.webp";
 
 export default {

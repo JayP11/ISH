@@ -17,7 +17,7 @@ const Navbar = (props) => {
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      if (position > 600) {
+      if (position >600) {
         setNavbarBgColor('#fff'); // Change background color when scrolled
         setNavbarBgShadow('0 0 35px rgba(0,0,0,.1)'); // Change background color when scrolled
         // setMenuIconColorChange('#ec606c'); // Change background color when scrolled

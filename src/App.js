@@ -18,13 +18,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-      <a
-        // href="http://Ishitaghelani.glossgenius.com"
-        href="https://www.vagaro.com/us04/tanglezhairstudiobg"
+      <Link
+        to="https://www.vagaro.com/us04/tanglezhairstudiobg"
         target="_blank"
         className="subscription-btn">
         Book Appointment
-      </a>
+      </Link>
       <div className="whats-app-main">
         <button className="whats-app" onClick={() => window.scrollTo(0, 0)}>
           <AiOutlineArrowUp className="float-icon" />

@@ -77,11 +77,12 @@ const Footer = () => {
         <div className="footer-inner-part3-flex">
           <p className="footer-part-header">Get in touch</p>
           <div className="footer-link-flex">
-            <p className="footer-link">
-              {/* Atarah Beauty Bar, <br /> 1251 Suite 2, 1251 Magnolia street,
-              Bowling Green, KY 42104 */}
-              Tanglez Hair Studio,<br/>
-              2530 Scottsville Rd, 108, Bowling Green KY 42104
+            <p className="our-service-item-desc">
+              
+              Folk Haus Salon,
+              <br />
+              1005 E 15th Ave, Bowling Green,
+              <br /> KY 42104, United States
             </p>
             <div className="footer-icon-flex">
               {/* <FiPhoneCall className="link-footer-icon" /> */}
