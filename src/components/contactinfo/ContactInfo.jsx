@@ -3,8 +3,9 @@ import "./ContactInfo.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsChatText, BsPerson } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
+import { Link } from "react-router-dom";
 const ContactInfo = ({ getContactData }) => {
-  console.log("getContactData", getContactData);
+  // console.log("getContactData", getContactData);
   return (
     <>
       <div className="contact-sec">
@@ -19,20 +20,23 @@ const ContactInfo = ({ getContactData }) => {
                   <BsPerson className="con-info-icon" />
                   <p className="our-service-item-name">Contact Person :</p>
                 </div>
-                <p className="our-service-item-desc">{getContactData ? getContactData.name : ""}</p>
+                <p className="our-service-item-desc">
+                  {getContactData ? getContactData.name : ""}
+                </p>
               </div>
               <div>
                 <div className="con-info-flex">
                   <HiOutlineMail className="con-info-icon" />
                   <p className="our-service-item-name">Email Id :</p>
                 </div>
-             
-                <a
+
+                <Link
                   className="our-service-item-desc"
-                  href={"mailto:" + `${getContactData ? getContactData.email : ""}`}
-                >
+                  to={
+                    "mailto:" + `${getContactData ? getContactData.email : ""}`
+                  }>
                   {getContactData ? getContactData.email : ""}
-                </a>
+                </Link>
               </div>
 
               <div>
@@ -42,16 +46,14 @@ const ContactInfo = ({ getContactData }) => {
                   <p className="our-service-item-name">Text only:</p>
                 </div>
 
-                <a href={"tel:" + `${getContactData ? getContactData.contactno : ""}`} className="our-service-item-desc">
-                {getContactData ? getContactData.contactno : ""}
-                </a>
-
-                {/* <a
-                  className="landing-profile-number"
-                  href={"tel:" + `${getdata.country_code}${getdata.mobile_no}`}
-                >
-                  +{getdata.country_code} {getdata.mobile_no}
-                </a> */}
+                <Link
+                  to={
+                    "tel:" + `${getContactData ? getContactData.contactno : ""}`
+                  }
+                  className="our-service-item-desc">
+                  {getContactData ? getContactData.contactno : ""}
+                </Link>
+   
               </div>
 
               <div>
@@ -59,10 +61,10 @@ const ContactInfo = ({ getContactData }) => {
                   <GrLocation className="con-info-icon" />
                   <p className="our-service-item-name">Address :</p>
                 </div>
-                <p className="our-service-item-desc" style={{maxWidth:"300px"}}>
-               
+                <p
+                  className="our-service-item-desc"
+                  style={{ maxWidth: "300px" }}>
                   {getContactData ? getContactData.address_one : ""}
-
                 </p>
               </div>
 

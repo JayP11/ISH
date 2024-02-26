@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import { OurMenuList } from "../components";
 import NavbarSecond from "../common/navbarsecond/NavbarSecond";
 import { Helmet } from "react-helmet";
@@ -42,28 +42,28 @@ const OurMenu = () => {
   };
   return (
     <>
-       {loading === true ? (
-                <div
-                    style={{
-                        width: "100%",
-                        height: "80vh",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                    }}
-                >
-                    <div className="loader"></div>
-                </div>
-            ) :(
-              <>
-      <Helmet>
-        <title>
-          ISH ESSENCE | Our Menu Organic Skin Studio in Bowling Green
-        </title>
-      </Helmet>
-      <OurMenuList getHomeData= {getHomeData}/>
-      <NavbarSecond />
-    </>)}
+      {loading === true ? (
+        <div
+          style={{
+            width: "100%",
+            height: "80vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}>
+          <div className="loader"></div>
+        </div>
+      ) : (
+        <>
+          <Helmet>
+            <title>
+              ISH ESSENCE | Our Menu Organic Skin Studio in Bowling Green
+            </title>
+          </Helmet>
+          <OurMenuList getHomeData={getHomeData} />
+          <NavbarSecond />
+        </>
+      )}
     </>
   );
 };

@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import "./OurMenuList.css";
 
-const OurMenuList = ({getHomeData}) => {
-
-  useEffect(()=>{
-    console.log("menu data are",getHomeData);
-  })
+const OurMenuList = ({ getHomeData }) => {
+  useEffect(() => {
+    console.log("menu data are", getHomeData);
+  });
   return (
     <div className="our-menu-list-sec">
       <div className="container">
@@ -16,39 +15,41 @@ const OurMenuList = ({getHomeData}) => {
           </p>
         </div>
         <div className="our-menu-list-felx">
-        {getHomeData && getHomeData.map((item)=>{
-          return(
-            <>
-            {item.serviceclone.map((itm)=>{
-              return(
-                <div className="our-service-menu-part">
-            <div className="our-service-menu-type-box">
-              {/* <p className="facial-type">Relaxing Facial</p> */}
-              <p className="facial-type">{itm.services ? itm.services.name : ""}</p>
-            </div>
-            {
-              itm.serviceclonechild.map((it)=>{
-                return(
-                  <>
-                  <div className="our-service-menu-item-box">
-              <div className="our-service-menu-item-heading">
-                <p className="our-service-item-name">
-                  {/* ISHpecial Shanti Bliss Facial 100 mins */}
-                  {it.service_titles}
-                </p>
-                <p className="our-service-item-price">$147</p>
-              </div>
-              <p className="our-service-item-desc">
-                {it.service_description}
-              </p>
-            </div>
-                  </>
-                )
-              })
-            }
-           
+          {getHomeData &&
+            getHomeData.map((item) => {
+              return (
+                <>
+                  {item.serviceclone.map((itm) => {
+                    return (
+                      <div className="our-service-menu-part">
+                        <div className="our-service-menu-type-box">
+                          {/* <p className="facial-type">Relaxing Facial</p> */}
+                          <p className="facial-type">
+                            {itm.services ? itm.services.name : ""}
+                          </p>
+                        </div>
+                        {itm.serviceclonechild.map((it) => {
+                          return (
+                            <>
+                              <div className="our-service-menu-item-box">
+                                <div className="our-service-menu-item-heading">
+                                  <p className="our-service-item-name">
+                                    {/* ISHpecial Shanti Bliss Facial 100 mins */}
+                                    {it.service_titles}
+                                  </p>
+                                  <p className="our-service-item-price">
+                                    ${it.price}
+                                  </p>
+                                </div>
+                                <p className="our-service-item-desc">
+                                  {it.service_description}
+                                </p>
+                              </div>
+                            </>
+                          );
+                        })}
 
-            {/* <div className="our-service-menu-item-box">
+                        {/* <div className="our-service-menu-item-box">
               <div className="our-service-menu-item-heading">
                 <p className="our-service-item-name">
                   Sattva Radiance Facial 110 mins
@@ -84,15 +85,12 @@ const OurMenuList = ({getHomeData}) => {
                 with a peel off mask.
               </p>
             </div> */}
-          </div>
-              )
+                      </div>
+                    );
+                  })}
+                </>
+              );
             })}
-            
-          </>
-          )
-        })}
-         
-  
 
           {/*  */}
           {/* <div className="our-service-menu-part">
@@ -126,7 +124,6 @@ const OurMenuList = ({getHomeData}) => {
             </div>
           </div> */}
           {/*  */}
-     
 
           {/* <div className="our-service-menu-part">
             <div className="our-service-menu-type-box">
@@ -149,7 +146,6 @@ const OurMenuList = ({getHomeData}) => {
               <p className="our-service-item-price">$25</p>
             </div>
           </div> */}
-    
 
           {/* here */}
           {/* <div className="our-service-menu-part">
@@ -175,7 +171,7 @@ const OurMenuList = ({getHomeData}) => {
           </div> */}
         </div>
       </div>
-      <p className="home-services-head-big-txt" style={{paddingTop:"4rem"}}>
+      <p className="home-services-head-big-txt" style={{ paddingTop: "4rem" }}>
         Ask us for more customized treatment and bridal packages.
       </p>
     </div>

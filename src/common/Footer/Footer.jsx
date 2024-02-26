@@ -1,91 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import images from "../../constants/images";
 import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
-
-import axios from "axios";
-// import Notification from "../../Utils/Notification";
-// import { subscribes } from "../../Utils/Constant";
-import { HiOutlineLocationMarker } from "react-icons/hi";
-import { mobileValidate } from "../../Utils/helpers";
 import { Link } from "react-router-dom";
 import { BsChatText } from "react-icons/bs";
+import axios from "axios";
+import { get_countact, ACCEPT_HEADER } from "../../Utils/Constant";
+
 const Footer = () => {
-  const [email, setemail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [getContactData, setContactData] = useState([]);
 
-  // const kNews = async () => {
-  //   const regEx =
-  //     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  //   const regexpMobile = /^[0-9\b]+$/;
-
-  //   if (email == "") {
-  //     Notification("error", "Error!", "Please enter your Email Address!");
-  //     return;
-  //   } else {
-  //     const formData = new FormData();
-  //     //
-  //     formData.append("email", email);
-  //     console.log("formData contact us ", formData);
-
-  //     const response = await axios
-  //       .post(subscribes, formData, {
-  //         headers: {
-  //           Accept: "application/x.kingskraft.v1+json",
-  //         },
-  //       })
-  //       .catch((error) => console.error(`Error: ${error}`));
-  //     console.log("response contact us ", response.data);
-
-  //     if (response.data.success == 1) {
-  //       setemail("");
-  //       Notification(
-  //         "success",
-  //         "Success!",
-  //         "Subscribed"
-  //       );
-  //       return;
-  //     } else {
-  //       Notification("error", "Error!", "please enter valid data!");
-  //       return;
-  //     }
-  //   }
-  // };
+  const getContactDataApi = async () => {
+    setLoading(true);
+    axios
+      .get(get_countact, {
+        headers: {
+          Accept: ACCEPT_HEADER,
+        },
+      })
+      .then((res) => {
+        // console.log("contact data footer", JSON.stringify(res.data, null, 2));
+        if (res.data.success === 1) {
+          setContactData(res.data.data[0]);
+          setLoading(false);
+        } else {
+        }
+      })
+      .catch((err) => {
+        console.log("err11", err);
+      });
+  };
+  useEffect(() => {
+    getContactDataApi();
+  }, []);
   return (
     <div className="footer-sec">
       <div className="footer-flex container">
-        {/* <div className="footer-inner-part1-flex">
-          <p className="footer-part-header">Company</p>
-          <ul className="footer-link-flex">
-            <li><Link to="/" className="footer-link">About Company</Link></li>
-            <li><Link to="/" className="footer-link">Company services</Link></li>
-            <li><Link to="/" className="footer-link">Job opportunities</Link></li>
-            <li><Link to="/" className="footer-link">Contact us</Link></li>
-          </ul>
-        </div>
-        <div className="footer-inner-part2-flex">
-          <p className="footer-part-header">Customer</p>
-          <ul className="footer-link-flex" >
-            <li><Link to="/" className="footer-link">Client support</Link></li>
-            <li><Link to="/" className="footer-link">Pricing packages</Link></li>
-            <li><Link to="/" className="footer-link">Company history</Link></li>
-            <li><Link to="/" className="footer-link">Our process</Link></li>
-          </ul>
-        </div> */}
         <div className="footer-inner-part3-flex">
           <p className="footer-part-header">Get in touch</p>
           <div className="footer-link-flex">
             <p className="our-service-item-desc">
-              
-              Folk Haus Salon,
-              <br />
-              1005 E 15th Ave, Bowling Green,
-              <br /> KY 42104, United States
+              {getContactData ? getContactData.address_one : ""}
             </p>
             <div className="footer-icon-flex">
-              {/* <FiPhoneCall className="link-footer-icon" /> */}
               <BsChatText
                 style={{
                   color: "white",
@@ -95,15 +56,19 @@ const Footer = () => {
                 }}
                 className="con-info-icon"
               />
-              <a href="tel:+1 6154998889" className="footer-link">
-                +1 6154998889
-              </a>
+              <Link to="tel:+1 6154998889" className="footer-link">
+                {getContactData.contactno}
+              </Link>
             </div>
             <div className="footer-icon-flex">
               <AiOutlineMail className="link-footer-icon" />
-              <a href="ishessence@gmail.com" className="footer-link">
-                ishessence@gmail.com
-              </a>
+              <Link
+                className="our-service-item-desc"
+                to={
+                  "mailto:" + `${getContactData ? getContactData.email : ""}`
+                }>
+                {getContactData ? getContactData.email : ""}
+              </Link>
             </div>
           </div>
         </div>
@@ -112,29 +77,16 @@ const Footer = () => {
           <div className="footer-img-flex">
             <div className="footer-insta-img-main">
               <img
+                alt=""
                 src={images.footer_link_img1}
                 className="footer-link-part-img"
               />
               <div className="footer-insta-img-part">
-                <a href="https://www.instagram.com/" target="_blank">
+                <Link to="https://www.instagram.com/" target="_blank">
                   <AiOutlineInstagram className="footer-social-icon" />
-                </a>
+                </Link>
               </div>
             </div>
-            {/* <div className="footer-insta-img-main">
-              <img src={images.footer_link_img2} className="footer-link-part-img" />
-              <div className="footer-insta-img-part">
-
-                <a href="https://www.instagram.com/" target="_blank"><AiOutlineInstagram className="footer-social-icon" /></a>
-              </div>
-            </div>
-            <div className="footer-insta-img-main">
-              <img src={images.footer_link_img3} className="footer-link-part-img" />
-              <div className="footer-insta-img-part">
-
-                <a href="https://www.instagram.com/" target="_blank"><AiOutlineInstagram className="footer-social-icon" /></a>
-              </div>
-            </div> */}
           </div>
           <div className="footer-insta-flex">
             <AiOutlineInstagram className="insta-footer-icon" />
@@ -152,16 +104,16 @@ const Footer = () => {
         </div>
         <p className="footer-copyright-txt">© 2023 all rights reserved.</p>
         <div className="footer-bottom-social-icon-flex">
-          <a href="https://www.facebook.com/" target="_blank">
+          <Link to="https://www.facebook.com/" target="_blank">
             <FaFacebookF className="footer-social-icon" />
-          </a>
+          </Link>
           <TbWorld className="footer-social-icon" />
-          <a href="https://twitter.com/" target="_blank">
+          <Link to="https://twitter.com/" target="_blank">
             <FaTwitter className="footer-social-icon" />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
+          </Link>
+          <Link to="https://www.instagram.com/" target="_blank">
             <AiOutlineInstagram className="footer-social-icon" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

@@ -76,12 +76,12 @@ const Landingpage = () => {
 
           <Hero getHomeData={getHomeData} />
           <HomeServices getHomeData={getHomeData} />
-          <HomeReversableCard />
-          <HomeFacility />
+          <HomeReversableCard getHomeData={getHomeData} />
+          <HomeFacility getHomeData={getHomeData} />
           <HomeVideo getHomeData={getHomeData} />
-            <HomeTestimonial getHomeData={getHomeData} />
+          <HomeTestimonial getHomeData={getHomeData} />
           <HomeBrandsLogo />
-          <HomeBlog />
+          <HomeBlog getHomeData={getHomeData} />
         </>
       )}
       {/* <HomePackages /> */}
