@@ -74,27 +74,6 @@
   text-transform: uppercase;
 }
 
-.test_img1 {
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-}
-
-.test_img4 {
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-  object-fit: cover;
-  object-fit: top;
-}
-
-.test_img5 {
-  width: 180px;
-  height: 180px;
-  border-radius: 100%;
-  object-fit: cover;
-}
-
 /* Media Query */
 
 @media screen and (max-width: 1170px) {

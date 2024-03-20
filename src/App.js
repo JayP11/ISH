@@ -19,7 +19,9 @@ function App() {
       </Routes>
       <Footer />
       <Link
-        to="https://www.vagaro.com/us04/tanglezhairstudiobg"
+        // href="http://Ishitaghelani.glossgenius.com"
+        // href="https://www.vagaro.com/us04/tanglezhairstudiobg"
+        to="https://www.vagaro.com/us04/folkhaussalon"
         target="_blank"
         className="subscription-btn">
         Book Appointment

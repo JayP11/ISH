@@ -3,9 +3,7 @@ import "./ContactInfo.css";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsChatText, BsPerson } from "react-icons/bs";
 import { GrLocation } from "react-icons/gr";
-import { Link } from "react-router-dom";
-const ContactInfo = ({ getContactData }) => {
-  // console.log("getContactData", getContactData);
+const ContactInfo = () => {
   return (
     <>
       <div className="contact-sec">
@@ -20,23 +18,18 @@ const ContactInfo = ({ getContactData }) => {
                   <BsPerson className="con-info-icon" />
                   <p className="our-service-item-name">Contact Person :</p>
                 </div>
-                <p className="our-service-item-desc">
-                  {getContactData ? getContactData.name : ""}
-                </p>
+                <p className="our-service-item-desc">Ishita Ghelani</p>
               </div>
               <div>
                 <div className="con-info-flex">
                   <HiOutlineMail className="con-info-icon" />
                   <p className="our-service-item-name">Email Id :</p>
                 </div>
-
-                <Link
-                  className="our-service-item-desc"
-                  to={
-                    "mailto:" + `${getContactData ? getContactData.email : ""}`
-                  }>
-                  {getContactData ? getContactData.email : ""}
-                </Link>
+                <a
+                  href="ishessence@gmail.com"
+                  className="our-service-item-desc">
+                  ishessence@gmail.com
+                </a>
               </div>
 
               <div>
@@ -46,14 +39,9 @@ const ContactInfo = ({ getContactData }) => {
                   <p className="our-service-item-name">Text only:</p>
                 </div>
 
-                <Link
-                  to={
-                    "tel:" + `${getContactData ? getContactData.contactno : ""}`
-                  }
-                  className="our-service-item-desc">
-                  {getContactData ? getContactData.contactno : ""}
-                </Link>
-   
+                <a href="tel:+1 6154998889" className="our-service-item-desc">
+                  +1 6154998889
+                </a>
               </div>
 
               <div>
@@ -61,10 +49,17 @@ const ContactInfo = ({ getContactData }) => {
                   <GrLocation className="con-info-icon" />
                   <p className="our-service-item-name">Address :</p>
                 </div>
-                <p
-                  className="our-service-item-desc"
-                  style={{ maxWidth: "300px" }}>
-                  {getContactData ? getContactData.address_one : ""}
+                {/* <p className="our-service-item-desc">
+                  Folk Haus Salon,
+                  <br />
+                  1005 E 15th Ave, Bowling Green,
+                  <br /> KY 42104, United States
+                </p> */}
+                <p className="our-service-item-desc">
+                  Tanglez Hair Studio,
+                  <br />
+                  2530 Scottsville Rd Suite 108,
+                  <br /> Bowling Green, KY 42104
                 </p>
               </div>
 

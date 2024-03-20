@@ -1,10 +1,11 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 import images from "../../constants/images";
 import "./Hero.css";
 
-const Hero = ({ getHomeData }) => {
-   return (
+const Hero = () => {
+  return (
     <>
       {/* <Carousel
         showArrows={true}
@@ -56,11 +57,7 @@ const Hero = ({ getHomeData }) => {
         </div>
       </Carousel> */}
       <div className="hero-logobox">
-        <img
-          src={getHomeData ? getHomeData.banner_path : images.logo_2}
-          className="hero-logo"
-          alt=""
-        />
+        <img src={images.logo_2} className="hero-logo" />
       </div>
     </>
   );
